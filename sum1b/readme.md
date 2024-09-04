@@ -1,4 +1,12 @@
- ¿Cómo Funciona el Código de Sumador de 1 Bit?
+ ## Integrantes
+* steven caro 
+* Jorge Andres Barandica
+* 
+
+
+
+ ## Documentación
+ # ¿Cómo Funciona el Código de Sumador de 1 Bit?
 
 Este código define un módulo llamado ´sum1b´, que representa un sumador de 1 bit con acarreo. Los sumadores de 1 bit son bloques básicos utilizados en circuitos aritméticos, como los sumadores completos, que suman dos números binarios.
 
