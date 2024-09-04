@@ -1,10 +1,10 @@
-# ¿Como funciona el codigo de sumador de 1 bi?
+ ¿Cómo Funciona el Código de Sumador de 1 Bit?
 
 Este código define un módulo llamado ´sum1b´, que representa un sumador de 1 bit con acarreo. Los sumadores de 1 bit son bloques básicos utilizados en circuitos aritméticos, como los sumadores completos, que suman dos números binarios.
 
- ## Explicación Paso a Paso
+    Explicación Paso a Paso
 
-### 1. Definición del Módulo:
+ 1. Definición del Módulo:
 
 Un módulo en Verilog encapsula una parte del diseño del hardware, que puede ser tan simple como una puerta lógica o tan complejo como un microprocesador. Dentro del módulo, puedes definir las entradas y salidas, los comportamientos y la lógica que se necesita para implementar una funcionalidad específica. En este coóigo el modulo recibe el nombre de `sum1b`
 Las entradas se asignan con la palabra reservada `input` seguido del nombre que se desea en este caso las entradas serán `A` y `B` caso similar ocurre con la salida, tan solo que se usa la palabra reservada `output` las salidas en este codigo son `sum` y `Cout`. En un módulo Verilog, si una entrada o salida se declara sin un rango de bits, se considera que es de 1 bit. En este caso, tanto `A` como `B` son señales de 1 bit.
@@ -16,11 +16,11 @@ Una variable importante para el sumador de 4 bits es la entrada `Ci`: El bit de 
     `sum`: El resultado de la suma de `A`, `B` y `Ci`.
     `Cout`: El bit de acarreo de salida, que se envía al siguiente dígito de mayor orden en una suma binaria de varios bits.
 
-### 2. Declaración de una Variable Interna:
+ 2. Declaración de una Variable Interna:
 
 reg [1:0] result: Esta línea declara una variable llamada result que puede almacenar dos bits (ya que el tamaño está definido por [1:0]). Esta variable almacenará el resultado de la suma. reg indica que `result` puede cambiar su valor a lo largo del tiempo y es utilizada dentro de un bloque secuencial como el que veremos.
 
-### 3. Asignación de las Salidas:
+ 3. Asignación de las Salidas:
 
     assign Sum = result[0];
     assign Cout = result[1];
@@ -41,7 +41,7 @@ El "0" es el resultado de la suma (Sum).
 El "1" es el acarreo (Carry Out).
 Esto es importante porque sin manejar correctamente el acarreo, no se podría realizar sumas binarias correctas. Por ejemplo, en un sumador de 4 bits, el acarreo de un bit menos significativo podría afectar el siguiente bit.
 
-### 4. El Bloque always:
+ 4. El Bloque always:
 
     always@(*) begin
       result = A+B+Ci;
