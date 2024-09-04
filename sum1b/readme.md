@@ -50,10 +50,15 @@ El "1" es el acarreo (Carry Out).
 Esto es importante porque sin manejar correctamente el acarreo, no se podría realizar sumas binarias correctas. Por ejemplo, en un sumador de 4 bits, el acarreo de un bit menos significativo podría afectar el siguiente bit.
 
  4. El Bloque always:
-
+```
     always@(*) begin
       result = A+B+Ci;
     end
-- `always@(*)`: Este bloque indica que el código dentro de él se ejecutará siempre que cambie alguna de las señales de entrada (`A`, `B`, o `Ci`). El asterisco `(*)` es un comodín que significa "escuchar cambios en cualquiera de las señales de entrada".
-- result = A + B + Ci;: Aquí es donde ocurre la suma. El código suma `A`, `B`, y `Ci`, y almacena el resultado en `result`. Como `result` tiene dos bits, puede almacenar tanto el bit de suma (Sum) como el bit de acarreo (Cout).
-- begin y end: Delimitan el bloque de código que se ejecuta dentro del bloque always.
+```
+* `always@(*)`: Este bloque indica que el código dentro de él se ejecutará siempre que cambie alguna de las señales de entrada (`A`, `B`, o `Ci`). El asterisco `(*)` es un comodín que significa "escuchar cambios en cualquiera de las señales de entrada".
++ result = A + B + Ci;: Aquí es donde ocurre la suma. El código suma `A`, `B`, y `Ci`, y almacena el resultado en `result`. Como `result` tiene dos bits, puede almacenar tanto el bit de suma (Sum) como el bit de acarreo (Cout).
++ begin y end: Delimitan el bloque de código que se ejecuta dentro del bloque always.
+
+
+## Simulación
+![Sim1](./sum1b_tb.png)
