@@ -8,5 +8,5 @@ Este repositorio contiene los laboratorios esenciales para el desarrollo de un s
 # Labotarorios
 
 1. [Sumador de un bit](sum1b/readme.md)
-2. [sum4b] (sum4b/readme.md)
+2. [sum4b] (sum4b/readme.me)
 3. [Multiplicador de 3 bits](multiplicador/readme.md)
