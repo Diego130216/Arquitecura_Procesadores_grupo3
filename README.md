@@ -7,4 +7,4 @@ Este repositorio contiene los laboratorios esenciales para el desarrollo de un s
 
 # Labotarorios
 
-1. [SUM1B](sum1b/readme.md)
+1. [Sumador de un bit](sum1b/readme.md)
