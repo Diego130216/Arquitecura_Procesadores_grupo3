@@ -1,8 +1,3 @@
- ## Integrantes
-* Steven Caro 
-* Jorge Andres Barandica
-* Diego Alejandro Olaya
-
  ## Documentación
  # ¿Cómo Funciona el Código de Sumador de 1 Bit?
 
