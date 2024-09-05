@@ -33,3 +33,16 @@ El módulo `sum4b` se construye de la siguiente manera:
 
 ## Simulación
 ![Sim1](./sumador_tb.png)
+
+•	Entradas: 
+   De 4 bits cada una, etiquetadas como A [3:0] y B [3:0]. Estas representan los números a sumar.
+
+•	Salidas: 
+   Sum [3:0]: Representa el resultado de la suma de los 4 bits.
+
+•  Cout: Es el bit de acarreo (carry-out), que indica si hubo un sobrante en 
+   la suma.
+
+•	Señales Internas: se aprecian señales internas como c1, c2 y c3, que son los acarreos intermedios entre los sumadores de 1 bit que componen el sumador de 4 bits.
+
+En forma de onda se muestra cómo cambian las señales a lo largo del tiempo durante un periodo de tiempo de 2 segundos. 
