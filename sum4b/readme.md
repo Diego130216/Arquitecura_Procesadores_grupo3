@@ -1,49 +1,44 @@
 # Sumador de 4 Bits (sum4b) en Verilog
 
-Este módulo Verilog implementa un sumador de 4 bits (`sum4b`) utilizando cuatro instancias de un sumador de 1 bit (`sum1b`).
+Este módulo es donde cuatro piezas más pequeñas se unen para crear una más grande y poderosa.
 
-## Propósito
+El módulo `sum4b` suma dos números de 4 bits, como sumar números en una pequeña calculadora.
 
-El módulo `sum4b` realiza la suma aritmética de dos números de 4 bits (`A` y `B`):
+* `suma`: un número de 4 bits que suma `a` y `b`. Si la suma supera el límite, el bit de acarreo de salida se establecerá en 1.
 
-* `Sum`: Un número de 4 bits que representa la suma de `A` y `B`.
-* `Cout`: Un bit de acarreo de salida, que indica si hubo un desbordamiento en la suma.
+El módulo `sum4b`.
 
-## Estructura
+1. **incluye un módulo `sum1b`:**
 
-El módulo `sum4b`
+   es un módulo en Verilog el cual encapsula una parte del diseño del hardware, que puede ser tan simple como una puerta lógica o tan complejo como un microprocesador. Dentro del módulo, se puede definir las entradas y salidas, los comportamientos y la lógica que se necesita para implementar una funcionalidad específica. En este código el modulo recibe el nombre de `sum1b`
 
-1. **Incluye el módulo `sum1b`:** 
-   * `include "sum1b.v"` se asegura que el código del sumador de 1 bit esté disponible para su uso.
+El módulo `sum4b` es una colección de funciones que nos ayudan a realizar cálculos y resolver problemas relacionados con números.
+* `input [3:0] a`: entrada de 4 bits para el primer número
+* `input [3:0] b`: entrada de 4 bits para el segundo número
+* `output cout`: salida de 1 bit para acarreo
+* `salida [3:0] suma`: salida de 4 bits para suma
 
-2. **Define el módulo `sum4b`:**
-   * `input [3:0] A`: Entrada de 4 bits para el primer número.
-   * `input [3:0] B`: Entrada de 4 bits para el segundo número.
-   * `output Cout`: Salida de 1 bit para el acarreo.
-   * `output [3:0] Sum`: Salida de 4 bits para la suma.
+Declarar señales internas:
+* `wire c1, c2, c3`: Señales para los acarreos intermedios entre los sumadores de 1 bit.
+* `wire c_out`: Señal para conectar el acarreo de salida del último sumador de 1 bit a `Cout`.
 
-3. **Declara señales internas:**
-   * `wire c1, c2, c3`: Señales para los acarreos intermedios entre los sumadores de 1 bit.
-   * `wire c_out`: Señal para conectar el acarreo de salida del último sumador de 1 bit a `Cout`.
+4. **Instancia de cuatro sumadores de 1 bit (`sum1b`):**
+* `s0`, `s1`, `s2`, `s3`: Cuatro instancias del módulo `sum1b` para sumar cada bit de `A` y `B`.
+* Los acarreos están encadenados: el acarreo de salida de un sumador está conectado a la entrada de acarreo del siguiente.
+* El acarreo de salida del último sumador (`s3.Cout`) se asigna a `Cout`.
 
-4. **Instancia cuatro sumadores de 1 bit (`sum1b`):**
-   * `s0`, `s1`, `s2`, `s3`: Cuatro instancias del módulo `sum1b` para sumar cada bit de `A` y `B`.
-   * Los acarreos se encadenan: el acarreo de salida de un sumador se conecta a la entrada de acarreo del siguiente.
-   * El acarreo de salida del último sumador (`s3.Cout`) se asigna a `Cout`.
-
-## Simulación
+•• Simulación
 ![Sim1](./sumador_tb.png)
 
-•	Entradas: 
-   De 4 bits cada una, etiquetadas como A [3:0] y B [3:0]. Estas representan los números a sumar.
+• Entradas:
+4 bits cada uno, etiquetados A [3:0] y B [3:0]. Estos representan los números a sumar.
 
-•	Salidas: 
-   Sum [3:0]: Representa el resultado de la suma de los 4 bits.
+• Salidas:
+Suma [3:0]: Representa el resultado de la suma de los 4 bits.
 
-•  Cout: Es el bit de acarreo (carry-out), que indica si hubo un sobrante en 
-   la suma.
+• Cout: Es el bit de acarreo, que indica si hubo excedente en
+la suma.
 
-•	Señales Internas: se aprecian señales internas como c1, c2 y c3, que son los acarreos intermedios entre los sumadores de 1 bit que componen el sumador de 4 bits.
+• Señales Internas: se pueden observar señales internas como c1, c2 y c3, que son los acarreos intermedios entre los sumadores de 1 bit que conforman el sumador de 4 bits.
 
-En la forma de onda se muestra cómo cambian las señales a lo largo del tiempo durante un periodo de tiempo de 2 segundos. 
-
+La forma de onda muestra cómo las señales cambian con el tiempo durante un período de 2 segundos.
