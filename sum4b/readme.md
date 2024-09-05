@@ -13,21 +13,42 @@ El módulo `sum4b`.
  Este módulo es el mismo que se detalla en [sum1b](/sum1b/readme.md) ahi se puede apreciar más su funcionamiento.
   
 El módulo `sum4b` es una colección de funciones que nos ayudan a realizar cálculos y resolver problemas relacionados con números.
+```
+    module sum4b (
+            input  [3:0] A,
+            input  [3:0] B,
+            output       Cout,
+            output [3:0] Sum
+        );
+```
+
 * `input [3:0] a`: entrada de 4 bits para el primer número
 * `input [3:0] b`: entrada de 4 bits para el segundo número
 * `output cout`: salida de 1 bit para acarreo
 * `salida [3:0] suma`: salida de 4 bits para suma
 
 Declarar señales internas:
+```
+    wire c1,c2,c3;
+    wire c_out; 
+
+```
 * `wire c1, c2, c3`: Señales para los acarreos intermedios entre los sumadores de 1 bit.
 * `wire c_out`: Señal para conectar el acarreo de salida del último sumador de 1 bit a `Cout`.
 
 4. **Instancia de cuatro sumadores de 1 bit (`sum1b`):**
+```
+    sum1b s0 (.A(A[0]), .B(B[0]), .Ci(1'b0),  .Cout(c1) ,.Sum(Sum[0]));
+    sum1b s1 (.A(A[1]), .B(B[1]), .Ci(c1), .Cout(c2) ,.Sum(Sum[1]));
+    sum1b s2 (.A(A[2]), .B(B[2]), .Ci(c2), .Cout(c3) ,.Sum(Sum[2]));
+    sum1b s3 (.A(A[3]), .B(B[3]), .Ci(c3), .Cout(Cout) ,.Sum(Sum[3]));
+```
 * `s0`, `s1`, `s2`, `s3`: Cuatro instancias del módulo `sum1b` para sumar cada bit de `A` y `B`.
 * Los acarreos están encadenados: el acarreo de salida de un sumador está conectado a la entrada de acarreo del siguiente.
 * El acarreo de salida del último sumador (`s3.Cout`) se asigna a `Cout`.
 
-•• Simulación
+## Simulación
+
 ![Sim1](./sumador_tb.png)
 
 • Entradas:
