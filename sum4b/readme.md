@@ -46,3 +46,4 @@ El módulo `sum4b` se construye de la siguiente manera:
 •	Señales Internas: se aprecian señales internas como c1, c2 y c3, que son los acarreos intermedios entre los sumadores de 1 bit que componen el sumador de 4 bits.
 
 En la forma de onda se muestra cómo cambian las señales a lo largo del tiempo durante un periodo de tiempo de 2 segundos. 
+
