@@ -1,4 +1,4 @@
-# Sumador de 4 Bits (sum4b) en Verilog
+# Sumador de 4 Bits [sum4b](sum4b/sum4b.v) en Verilog
 
 Este módulo es donde cuatro piezas más pequeñas se unen para crear una más grande y poderosa.
 
