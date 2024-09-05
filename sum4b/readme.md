@@ -10,7 +10,7 @@ El módulo `sum4b`.
 
 1. ** Módulo `sum1b`:**
 
- Este módulo es el mismo que se detalla en [sumador de 1b](sum1b/readme.md) ahi se puede apreciar más su funcionamiento.
+ Este módulo es el mismo que se detalla en [sumador de 1b](Arquitectura_Procesadores_grupo3/sum1b/readme.md) ahi se puede apreciar más su funcionamiento.
   
 El módulo `sum4b` es una colección de funciones que nos ayudan a realizar cálculos y resolver problemas relacionados con números.
 * `input [3:0] a`: entrada de 4 bits para el primer número
