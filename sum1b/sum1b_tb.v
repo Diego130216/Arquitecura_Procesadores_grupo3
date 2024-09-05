@@ -1,4 +1,3 @@
-`include "sum1b_primitive.v"
 `include "sum1b.v"
 
 `timescale 1ns/1ns
@@ -12,7 +11,7 @@ module sum1b_tb();
 	wire S_tb;
 	
 	// Instantiate the Unit Under Test (UUT)
-	sum1b_primitive uut(
+	sum1b uut(
 		.A(A_tb),
 		.B(B_tb),
 		.Ci(Ci_tb),
