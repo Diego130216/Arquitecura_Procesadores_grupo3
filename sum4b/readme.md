@@ -31,4 +31,5 @@ El módulo `sum4b` se construye de la siguiente manera:
    * Los acarreos se encadenan: el acarreo de salida de un sumador se conecta a la entrada de acarreo del siguiente.
    * El acarreo de salida del último sumador (`s3.Cout`) se asigna a `Cout`.
 
-
+## Simulación
+![Sim1](./sumador_tb.png)
