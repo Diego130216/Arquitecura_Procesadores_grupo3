@@ -1,8 +1,3 @@
- ## Integrantes
-* Steven Caro 
-* Jorge Andres Barandica
-* Diego Alejandro Olaya
-
  ## Documentación
  # ¿Cómo Funciona el Código de Sumador de 1 Bit?
 
@@ -77,4 +72,4 @@ Esto es importante porque sin manejar correctamente el acarreo, no se podría re
 
 ## Simulación
 Para la simulación se tiene que 
-![Sim1](./sum1b_tb.png)
+![Sim1](./imagenes/)
