@@ -3,4 +3,8 @@
 * JORGE ANDRÉS BARANDICA ARIAS
 * DIEGO ALEJANDRO OLAYA
   
-En este repositorio compartido haremos adelantos y explicaciones sobre los laboratorios destinados a la materia Arquitectura de Procesadores
+Este repositorio contiene los laboratorios esenciales para el desarrollo de un sistema digital avanzado, utilizando lenguajes de descripción de hardware (HDL). Aquí, se realizará simulaciones y se implementará prácticas en la FPGA MAX 10, lo que permitirá consolidar los conocimientos teóricos y prácticos en el diseño y construcción de sistemas digitales.
+
+# Labotarorios
+
+1. [SUM1B]()
