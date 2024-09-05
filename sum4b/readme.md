@@ -8,10 +8,10 @@ El módulo `sum4b` suma dos números de 4 bits, como sumar números en una peque
 
 El módulo `sum4b`.
 
-1. **incluye un módulo `sum1b`:**
+1. ** Módulo `sum1b`:**
 
-   es un módulo en Verilog el cual encapsula una parte del diseño del hardware, que puede ser tan simple como una puerta lógica o tan complejo como un microprocesador. Dentro del módulo, se puede definir las entradas y salidas, los comportamientos y la lógica que se necesita para implementar una funcionalidad específica. En este código el modulo recibe el nombre de `sum1b`
-
+ Este módulo es el mismo que se detalla en [sumador de 1b](sum1b/readme.md) ahi se puede apreciar más su funcionamiento.
+  
 El módulo `sum4b` es una colección de funciones que nos ayudan a realizar cálculos y resolver problemas relacionados con números.
 * `input [3:0] a`: entrada de 4 bits para el primer número
 * `input [3:0] b`: entrada de 4 bits para el segundo número
