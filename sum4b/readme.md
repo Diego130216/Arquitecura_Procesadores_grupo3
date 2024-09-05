@@ -1,10 +1,3 @@
-## Integrantes
-
-
-- Steven Caro
-- Andres Barandica
-- Diego Olaya
-
 # Sumador de 4 Bits (sum4b) en Verilog
 
 Este módulo Verilog implementa un sumador de 4 bits (`sum4b`) utilizando cuatro instancias de un sumador de 1 bit (`sum1b`).
