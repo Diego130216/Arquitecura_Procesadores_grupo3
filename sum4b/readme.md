@@ -4,17 +4,17 @@ Este módulo Verilog implementa un sumador de 4 bits (`sum4b`) utilizando cuatro
 
 ## Propósito
 
-El módulo `sum4b` realiza la suma aritmética de dos números de 4 bits (`A` y `B`) y genera:
+El módulo `sum4b` realiza la suma aritmética de dos números de 4 bits (`A` y `B`):
 
 * `Sum`: Un número de 4 bits que representa la suma de `A` y `B`.
 * `Cout`: Un bit de acarreo de salida, que indica si hubo un desbordamiento en la suma.
 
 ## Estructura
 
-El módulo `sum4b` se construye de la siguiente manera:
+El módulo `sum4b`
 
 1. **Incluye el módulo `sum1b`:** 
-   * La línea `include "sum1b.v"` asegura que el código del sumador de 1 bit esté disponible para su uso.
+   * `include "sum1b.v"` se asegura que el código del sumador de 1 bit esté disponible para su uso.
 
 2. **Define el módulo `sum4b`:**
    * `input [3:0] A`: Entrada de 4 bits para el primer número.
