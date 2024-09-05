@@ -76,4 +76,5 @@ Esto es importante porque sin manejar correctamente el acarreo, no se podría re
 
 
 ## Simulación
+Para la simulación se tiene que 
 ![Sim1](./sum1b_tb.png)
