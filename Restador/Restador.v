@@ -7,15 +7,9 @@ module Restador(
     output C_out
 );
     reg [4:0] a2;
-    wire c1, c2, c3, c4;
-    integer i;
-    
+    wire c1, c2, c3, c4;    
     always @(*) begin
-        // Calcular el complemento a 1 
-        for (i = 0; i <= 4; i = i + 1) begin
-            a2[i] = ~sustraendo[i]; // Complemento a 1
-        end
-        a2 = a2 + 1; // Calcular el complemento a 2
+        a2 = ~sustraendo + 1; // Calcular el complemento a 2
     end
 
     // Instanciando sumadores de 1 bit
