@@ -1,9 +1,9 @@
 `include "sum1b.v"
 
-module restador(
-    input[4:0] minuendo, 
-    input[4:0] sustraendo,
-    output[4:0] restador,
+module Restador(
+    input [4:0] minuendo, 
+    input [4:0] sustraendo,
+    output [4:0] restador,
     output C_out
 );
     reg [4:0] a2;
