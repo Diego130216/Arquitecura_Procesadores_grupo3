@@ -174,6 +174,28 @@ Los resultados en GTKWave también muestran que las salidas Cout y S coinciden c
 
 * Aplicaciones: Para proyectos donde la eficiencia y la optimización del hardware son cruciales, el uso de primitivas es más adecuado. En cambio, para proyectos donde se espera expandir o modificar el diseño fácilmente, el enfoque basado en registros y bloques always podría ser más conveniente.
 
+## Driagramas en Quartus
+
+Para realizar la comparación entre la descripción HDL y la implementación física en compuertas lógicas, se ha utilizado un sumador de 1 bit como ejemplo. El proceso consiste en dos etapas principales: primero, la implementación en código de hardware descriptivo (HDL), y segundo, la visualización de la red lógica en el entorno de desarrollo Quartus.
+
+### 1. Diagrama del Sumador de 1 Bit en HDL
+
+El primer diagrama representa la descripción del sumador de 1 bit utilizando un lenguaje de descripción de hardware (HDL). En este código HDL, se define el sumador de 1 bit con las siguientes entradas:
+
+* A: Primer bit de entrada
+* B: Segundo bit de entrada
+* Cin: Bit de acarreo de entrada
+* Sum: Resultado de la suma
+* Cout: Bit de acarreo de salida
+
+![hdl](/imagenes/sum1b_quartus.png)
+
+## 2. Diagrama del Sumador de 1 Bit con Compuertas Lógicas
+El segundo diagrama representa la implementación física del sumador de 1 bit utilizando compuertas lógicas básicas. Este diagrama muestra cómo las entradas ``A``, ``B`` y ``Cin`` se combinan utilizando compuertas XOR, AND y OR para obtener la salida ``S`` y el acarreo de salida ``Cout``. La descripción en compuertas lógicas es la siguiente:
+
+![compuertas](/imagenes/sum1b_primitive_quartus.png)
+
+Ambos diagramas proporcionarán una representación visual del diseño del sumador de 1 bit, facilitando la comparación entre la descripción en HDL y la implementación física.
 
 # Referencias 
 [1] D. Natali, "ECCI Arquitectura de Procesadores 2024-II," Repositorio en GitHub, 2024. [En línea]. Disponible en: https://github.com/DianaNatali/ECCI-Arquitectura-de-Procesadores-2024-II.git.
