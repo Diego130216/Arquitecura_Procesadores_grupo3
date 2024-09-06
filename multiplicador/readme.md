@@ -133,6 +133,18 @@ assign z = (B == 0) ? 1'b1 : 1'b0;
 ---
 
 ## Simulación :
+
+En la imagen de la simulación en Visual Studio con el testbench, podemos observar una columna denominada **Signals**, en la cual se muestran las señales o variables que estamos simulando. Estas señales son visualizadas en la parte de **Waves**. Para una mejor comprensión, hemos modificado la representación de las entradas de binario a decimal. Las variables que estamos observando son:
+
+- **MD** y **MR**: Representan los bits de entrada que se multiplicarán.
+- **pp**: Contiene el resultado de la multiplicación (6 bits).
+- **done**: Indica que la multiplicación ha sido completada.
+- **init**: Señal encargada de iniciar la multiplicación.
+
+Como podemos ver en la imagen, la variable **MD** aumenta su valor cada vez que la variable **MR** ha pasado por siete ciclos, es decir, cuando **MR** aumenta de uno en uno. Al llegar a 7, **MR** se reinicia a 0. La señal **init** tiene un periodo constante y se pone en estado alto para iniciar la multiplicación, luego vuelve a estado bajo. Cuando **done** está en estado alto, significa que la multiplicación se ha completado. Al iniciar una nueva multiplicación, **done** regresa a estado bajo hasta que esta se complete nuevamente.
+
+En cuanto a **pp**, que almacena el valor del resultado, observamos que en la simulación toma diferentes valores durante el proceso de multiplicación debido a la lógica interna del módulo. Sin embargo, podemos confirmar que el valor correcto de la multiplicación es aquel que se encuentra en **pp** justo en el momento en que **done** está en estado alto. Esto indica que la multiplicación ha finalizado, y el valor en **pp** es el resultado correcto.
+
 ![imagen1](/imagenes/simulacion_multi_1.png)
 ![imagen2](/imagenes/simulacion_multi_2.png)
 ![imagen3](/imagenes/simulacion_multi_3.png)
