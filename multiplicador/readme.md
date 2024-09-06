@@ -132,3 +132,8 @@ assign z = (B == 0) ? 1'b1 : 1'b0;
 
 ---
 
+## Simulación :
+![imagen1](/imagenes/simulacion_multi_1.png)
+![imagen2](/imagenes/simulacion_multi_2.png)
+![imagen3](/imagenes/simulacion_multi_3.png)
+
