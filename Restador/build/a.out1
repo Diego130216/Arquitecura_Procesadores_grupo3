@@ -1,0 +1,43 @@
+**** module/scope: restador
+     Flip-Flops   : 0
+     Logic Gates  : 15
+     ADDER[5]: 1 units
+     LOG[13]: 1 unaccounted
+     LOG[14]: 1 unaccounted
+**** module/scope: restador.s0
+     Flip-Flops   : 0
+     Logic Gates  : 8
+     ADDER[2]: 2 units
+     LOG[13]: 1 unaccounted
+     LOG[14]: 1 unaccounted
+**** module/scope: restador.s1
+     Flip-Flops   : 0
+     Logic Gates  : 8
+     ADDER[2]: 2 units
+     LOG[13]: 1 unaccounted
+     LOG[14]: 1 unaccounted
+**** module/scope: restador.s2
+     Flip-Flops   : 0
+     Logic Gates  : 8
+     ADDER[2]: 2 units
+     LOG[13]: 1 unaccounted
+     LOG[14]: 1 unaccounted
+**** module/scope: restador.s3
+     Flip-Flops   : 0
+     Logic Gates  : 8
+     ADDER[2]: 2 units
+     LOG[13]: 1 unaccounted
+     LOG[14]: 1 unaccounted
+**** module/scope: restador.s4
+     Flip-Flops   : 0
+     Logic Gates  : 8
+     ADDER[2]: 2 units
+     LOG[13]: 1 unaccounted
+     LOG[14]: 1 unaccounted
+**** TOTALS
+     Flip-Flops   : 0
+     Logic Gates  : 55
+     ADDER[2]: 10 units
+     ADDER[5]: 1 units
+     LOG[13]: 6 unaccounted
+     LOG[14]: 6 unaccounted
