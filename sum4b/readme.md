@@ -2,7 +2,7 @@
 
 Este módulo es donde cuatro piezas más pequeñas de un sumador de 1 bit en el cual se  unen para crear uno de 4 bits.
 
-![Sim1](./diagrama.jpg)
+<img src="./diagrama.jpg" width="400">
 
 
 El módulo `sum4b` se realiza la suma de dos números de 4 bits, como sumar números en una pequeña calculadora.
@@ -52,7 +52,7 @@ Declarar señales internas:
 
 ## Simulación
 
-![Sim1](./sumador_tb.png)
+<img src="./sumador_tb.png" width="500">
 
 • Entradas:
 4 bits cada uno, etiquetados A [3:0] y B [3:0]. Estos representan los números a sumar.
