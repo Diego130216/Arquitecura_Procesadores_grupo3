@@ -3,12 +3,12 @@ module sum1b(
         input B, 
         input Ci,
         output Cout,
-        output S
+        output Sum
     );
   
     reg [1:0] result;
   
-    assign S = result[0];
+    assign Sum = result[0];
     assign Cout = result[1];
   
     always@(*) begin
