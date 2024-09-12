@@ -1,22 +1,20 @@
-`include "sum1b.v"
+`include "sum4b.v"
 
 module Restador(
-    input [4:0] minuendo, 
-    input [4:0] sustraendo,
-    output [4:0] restador,
+    input [3:0] A, 
+    input [3:0] B,
+    output [3:0] restador,
+    input  sel,
     output C_out
 );
-    reg [4:0] a2;
-    wire c1, c2, c3, c4;    
-    always @(*) begin
-        a2 = ~sustraendo + 1; // Calcular el complemento a 2
+    reg [3:0] resul;
+    integer i;
+    always @(*) begin  
+        for (i = 0; i < 4; i = i + 1) begin
+            resul[i] = B[i] ^ sel;
+        end
     end
 
-    // Instanciando sumadores de 1 bit
-    sum1b s0 (.A(minuendo[0]), .B(a2[0]), .Ci(1'b0), .Cout(c1),    .Sum(restador[0]));
-    sum1b s1 (.A(minuendo[1]), .B(a2[1]), .Ci(c1),   .Cout(c2),    .Sum(restador[1]));
-    sum1b s2 (.A(minuendo[2]), .B(a2[2]), .Ci(c2),   .Cout(c3),    .Sum(restador[2]));
-    sum1b s3 (.A(minuendo[3]), .B(a2[3]), .Ci(c3),   .Cout(c4),    .Sum(restador[3]));
-    sum1b s4 (.A(minuendo[4]), .B(a2[4]), .Ci(c4),   .Cout(C_out), .Sum(restador[4]));
-
+    sum4b S (.A(A), .B(resul), .Ci(sel), .Cout(C_out), .Sum(restador)); 
+    
 endmodule
