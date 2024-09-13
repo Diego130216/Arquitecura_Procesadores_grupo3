@@ -1,0 +1,42 @@
+**** module/scope: Restador
+     Flip-Flops   : 0
+     Logic Gates  : 25
+     ADDER[4]: 1 units
+     MUX[2]: 4 slices
+     LOG[13]: 1 unaccounted
+     LOG[14]: 1 unaccounted
+**** module/scope: Restador.S
+     Flip-Flops   : 0
+     Logic Gates  : 0
+**** module/scope: Restador.S.s0
+     Flip-Flops   : 0
+     Logic Gates  : 8
+     ADDER[2]: 2 units
+     LOG[13]: 1 unaccounted
+     LOG[14]: 1 unaccounted
+**** module/scope: Restador.S.s1
+     Flip-Flops   : 0
+     Logic Gates  : 8
+     ADDER[2]: 2 units
+     LOG[13]: 1 unaccounted
+     LOG[14]: 1 unaccounted
+**** module/scope: Restador.S.s2
+     Flip-Flops   : 0
+     Logic Gates  : 8
+     ADDER[2]: 2 units
+     LOG[13]: 1 unaccounted
+     LOG[14]: 1 unaccounted
+**** module/scope: Restador.S.s3
+     Flip-Flops   : 0
+     Logic Gates  : 8
+     ADDER[2]: 2 units
+     LOG[13]: 1 unaccounted
+     LOG[14]: 1 unaccounted
+**** TOTALS
+     Flip-Flops   : 0
+     Logic Gates  : 57
+     ADDER[2]: 8 units
+     ADDER[4]: 1 units
+     MUX[2]: 4 slices
+     LOG[13]: 5 unaccounted
+     LOG[14]: 5 unaccounted
